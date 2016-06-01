@@ -2,6 +2,7 @@ package demo.study.app.com.tangycstudydemo;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 
 import demo.study.app.com.lib_core.BaseActivity;
 import demo.study.app.com.lib_core.BaseFragment;
@@ -25,6 +26,7 @@ public abstract class AppActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(getContentViewId());
+        initView();
 
         if(null == getIntent()){
             handlerIntent(getIntent());
@@ -40,6 +42,12 @@ public abstract class AppActivity extends BaseActivity {
         }
     }
 
+
+
+    public void initView(){
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle(getResources().getString(R.string.app_name));
+    }
 
 
     @Override

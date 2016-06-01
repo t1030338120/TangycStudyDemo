@@ -16,6 +16,7 @@
         android:id="@+id/btn_01"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textAllCaps="false"
         android:text="启动第二个Activity( 多个同级Fragment)"/>
 
 
