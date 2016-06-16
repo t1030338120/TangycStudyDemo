@@ -1,4 +1,4 @@
-package demo.study.app.com.tangycstudydemo.view;
+package demo.study.app.com.tangycstudydemo.widget;
 
 import android.content.Context;
 import android.support.v7.widget.GridLayoutManager;
@@ -122,8 +122,7 @@ public class LoadMoreRecyclerView extends RecyclerView {
 
     @Override public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
       if (viewType == TYPE_FOOTER) {
-        return new FooterViewHolder(LayoutInflater.from(parent.getContext())
-            .inflate(R.layout.layout_foot_loading, parent, false));
+        return new FooterViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_foot_loading, parent, false));
       } else { // type normal
         return mInternalAdapter.onCreateViewHolder(parent, viewType);
       }
