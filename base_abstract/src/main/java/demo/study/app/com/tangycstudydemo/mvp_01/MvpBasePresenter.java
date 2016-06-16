@@ -8,20 +8,20 @@ import java.lang.ref.WeakReference;
  */
 public class MvpBasePresenter<T> {
 
-    public WeakReference<T> currentView;
+    public WeakReference<T> mMvpView;
 
-    public void attachView(T view){
-        this.currentView = new WeakReference<T>(view);
+    public void attachView(T mvpView){
+        this.mMvpView = new WeakReference<T>(mvpView);
     }
 
 
     public void dettachView(){
-        this.currentView = null;
+        this.mMvpView = null;
     }
 
 
     public T getView(){
-        return currentView.get();
+        return mMvpView.get();
     }
 
 

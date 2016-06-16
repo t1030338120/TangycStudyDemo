@@ -7,9 +7,9 @@ import android.support.v7.app.AppCompatActivity;
  * 描述：
  * 作者：tyc
  */
-public abstract class MvpBaseActivity extends AppCompatActivity {
+public abstract class MvpBaseActivity <V, T extends MvpBasePresenter<V>>extends AppCompatActivity {
 
-    MvpBasePresenter mPresenter;
+    T mPresenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,11 +18,11 @@ public abstract class MvpBaseActivity extends AppCompatActivity {
         setContentView(getContentViewId());
 
         mPresenter = createPresenter();
-        mPresenter.attachView(this);
+        mPresenter.attachView((V) this);
     }
 
 
-    protected abstract MvpBasePresenter createPresenter();
+    protected abstract T createPresenter();
 
     protected abstract int getContentViewId();
 

@@ -7,6 +7,9 @@ import demo.study.app.com.tangycstudydemo.base_abstract.AppActivity;
 import demo.study.app.com.tangycstudydemo.base_abstract.fragment.MainFragment;
 
 
+/**
+ * 参考资料：http://blog.csdn.net/tyk0910/article/details/51355026
+ */
 public class MainActivity extends AppActivity {
 
 

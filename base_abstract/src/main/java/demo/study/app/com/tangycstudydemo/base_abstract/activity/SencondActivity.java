@@ -10,6 +10,7 @@ import demo.study.app.com.tangycstudydemo.base_abstract.fragment.MsgFragment;
 
 
 /**
+ * 参考资料：http://blog.csdn.net/tyk0910/article/details/51355026
  * 描述：同级下多个Fragment在内存不足导致的异常情况下，会出现重叠现象
  */
 public class SencondActivity extends AppActivity {
