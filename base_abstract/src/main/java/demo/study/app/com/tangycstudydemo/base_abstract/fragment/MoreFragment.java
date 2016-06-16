@@ -1,4 +1,4 @@
-package demo.study.app.com.tangycstudydemo.fragment;
+package demo.study.app.com.tangycstudydemo.base_abstract.fragment;
 
 
 import android.os.Bundle;

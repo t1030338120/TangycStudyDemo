@@ -1,12 +1,12 @@
-package demo.study.app.com.tangycstudydemo.activity;
+package demo.study.app.com.tangycstudydemo.base_abstract.activity;
 
 import android.os.Bundle;
 
 import demo.study.app.com.lib_core.BaseFragment;
-import demo.study.app.com.tangycstudydemo.AppActivity;
-import demo.study.app.com.tangycstudydemo.fragment.ContactFragment;
-import demo.study.app.com.tangycstudydemo.fragment.MoreFragment;
-import demo.study.app.com.tangycstudydemo.fragment.MsgFragment;
+import demo.study.app.com.tangycstudydemo.base_abstract.AppActivity;
+import demo.study.app.com.tangycstudydemo.base_abstract.fragment.ContactFragment;
+import demo.study.app.com.tangycstudydemo.base_abstract.fragment.MoreFragment;
+import demo.study.app.com.tangycstudydemo.base_abstract.fragment.MsgFragment;
 
 
 /**

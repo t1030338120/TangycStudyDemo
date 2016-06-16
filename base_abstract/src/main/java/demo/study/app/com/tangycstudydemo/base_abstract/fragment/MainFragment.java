@@ -1,4 +1,4 @@
-package demo.study.app.com.tangycstudydemo.fragment;
+package demo.study.app.com.tangycstudydemo.base_abstract.fragment;
 
 
 import android.content.Intent;
@@ -8,7 +8,7 @@ import android.view.View;
 
 import demo.study.app.com.lib_core.BaseFragment;
 import demo.study.app.com.tangycstudydemo.R;
-import demo.study.app.com.tangycstudydemo.activity.SencondActivity;
+import demo.study.app.com.tangycstudydemo.base_abstract.activity.SencondActivity;
 
 /**
  * A simple {@link Fragment} subclass.

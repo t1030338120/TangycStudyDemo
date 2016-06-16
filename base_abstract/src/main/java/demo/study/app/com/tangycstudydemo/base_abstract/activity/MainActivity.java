@@ -1,10 +1,10 @@
-package demo.study.app.com.tangycstudydemo.activity;
+package demo.study.app.com.tangycstudydemo.base_abstract.activity;
 
 import android.content.Intent;
 
 import demo.study.app.com.lib_core.BaseFragment;
-import demo.study.app.com.tangycstudydemo.AppActivity;
-import demo.study.app.com.tangycstudydemo.fragment.MainFragment;
+import demo.study.app.com.tangycstudydemo.base_abstract.AppActivity;
+import demo.study.app.com.tangycstudydemo.base_abstract.fragment.MainFragment;
 
 
 public class MainActivity extends AppActivity {

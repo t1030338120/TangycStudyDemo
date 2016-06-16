@@ -1,4 +1,4 @@
-package demo.study.app.com.tangycstudydemo;
+package demo.study.app.com.tangycstudydemo.base_abstract;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,9 +6,11 @@ import android.support.v7.widget.Toolbar;
 
 import demo.study.app.com.lib_core.BaseActivity;
 import demo.study.app.com.lib_core.BaseFragment;
+import demo.study.app.com.tangycstudydemo.R;
 
 
 /**
+ * 参考资料：http://blog.csdn.net/tyk0910/article/details/51355026
  * 描述：
  * 1、 一个必须实现的抽象方法getFirstFragment()，来获取当前Activity应该显示的第一个Fragment
  * 2、在Activity的onCreate()方法中拿到intent，添加fragment
