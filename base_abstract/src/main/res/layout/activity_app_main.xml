@@ -1,39 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="demo.study.app.com.tangycstudydemo.AppMainActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
 
+    <include layout="@layout/layout_toobar"/>
 
-    <Button
-        android:id="@+id/button_01"
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:onClick="click"
-        android:text="Activity+Fragment任务栈实现主架构"
-        android:textAllCaps="false"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="demo.study.app.com.tangycstudydemo.AppMainActivity">
 
 
-    <Button
-        android:id="@+id/button_02"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:onClick="click"
-        android:text="mvp简单实现，抽取Base类"
-        android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/button_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="click"
+            android:text="Activity+Fragment任务栈实现主架构"
+            android:textAllCaps="false"/>
 
 
-    <Button
-        android:id="@+id/button_03"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:onClick="click"
-        android:text="Loader提供presenter，解决Activity重启问题"
-        android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/button_02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="click"
+            android:text="mvp简单实现，抽取Base类"
+            android:textAllCaps="false"/>
+
+
+        <Button
+            android:id="@+id/button_03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="click"
+            android:text="Loader提供presenter，解决Activity重启问题"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
 </LinearLayout>
+
+

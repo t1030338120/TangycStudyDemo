@@ -6,5 +6,5 @@ package demo.study.app.com.tangycstudydemo.mvp_loader;
  */
 public interface TastView {
 
-//    String getShowData();
+    void setShowData(String value);
 }

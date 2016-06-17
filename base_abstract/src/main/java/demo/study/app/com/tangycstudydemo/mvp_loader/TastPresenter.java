@@ -8,7 +8,8 @@ import demo.study.app.com.tangycstudydemo.mvp_loader.base.BasePresenter;
  */
 public class TastPresenter extends BasePresenter<TastView> {
 
-    public String getShowData(){
-        return "presenter 返回的数据";
+    public void getShowData(){
+        getView().setShowData("mode 返回的数据");
     }
+
 }

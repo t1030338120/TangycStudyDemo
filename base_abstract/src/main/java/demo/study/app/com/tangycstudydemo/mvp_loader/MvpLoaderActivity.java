@@ -1,6 +1,7 @@
 package demo.study.app.com.tangycstudydemo.mvp_loader;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,17 +13,31 @@ import demo.study.app.com.tangycstudydemo.mvp_loader.base.PresenterFactory;
 /**
  * Mvp架构Loader管理presenter的简单demo
  */
-public class MvpLoaderActivity extends BaseMvpActivity<TastView, TastPresenter> {
+public class MvpLoaderActivity extends BaseMvpActivity<TastView, TastPresenter> implements TastView{
 
     private TextView mContentView;
 
+    Handler mHandler = new Handler();
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mContentView = (TextView) getContentView();
         setContentView(mContentView);
 
-        mContentView.setText(mPresenter.getShowData());
+
+//        mHandler.postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
+//                mPresenter.getShowData();
+//            }
+//        }, 1000);
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        mPresenter.getShowData();
     }
 
     public View getContentView(){
@@ -42,5 +57,10 @@ public class MvpLoaderActivity extends BaseMvpActivity<TastView, TastPresenter> 
                 return new TastPresenter();
             }
         };
+    }
+
+    @Override
+    public void setShowData(String value) {
+         mContentView.setText(value);
     }
 }
