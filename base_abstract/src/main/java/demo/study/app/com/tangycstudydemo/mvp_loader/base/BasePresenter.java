@@ -1,4 +1,4 @@
-package demo.study.app.com.tangycstudydemo.mvp_loader;
+package demo.study.app.com.tangycstudydemo.mvp_loader.base;
 
 import java.lang.ref.Reference;
 import java.lang.ref.WeakReference;

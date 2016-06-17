@@ -6,6 +6,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import demo.study.app.com.tangycstudydemo.mvp_loader.base.BaseMvpActivity;
+import demo.study.app.com.tangycstudydemo.mvp_loader.base.PresenterFactory;
+
 /**
  * Mvp架构Loader管理presenter的简单demo
  */

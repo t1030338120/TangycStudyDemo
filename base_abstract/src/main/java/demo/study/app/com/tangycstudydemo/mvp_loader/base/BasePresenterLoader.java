@@ -1,4 +1,4 @@
-package demo.study.app.com.tangycstudydemo.mvp_loader;
+package demo.study.app.com.tangycstudydemo.mvp_loader.base;
 
 import android.content.Context;
 import android.support.v4.content.Loader;
