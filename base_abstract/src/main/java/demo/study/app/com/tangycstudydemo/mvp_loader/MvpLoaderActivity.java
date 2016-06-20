@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import demo.study.app.com.tangycstudydemo.R;
 import demo.study.app.com.tangycstudydemo.mvp_loader.base.BaseMvpActivity;
 import demo.study.app.com.tangycstudydemo.mvp_loader.base.PresenterFactory;
 
@@ -22,8 +23,8 @@ public class MvpLoaderActivity extends BaseMvpActivity<TastView, TastPresenter> 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mContentView = (TextView) getContentView();
-        setContentView(mContentView);
+        setContentView(R.layout.activity_mvp_loader);
+        mContentView = (TextView) findViewById(R.id.text_loader_01);
 
 
 //        mHandler.postDelayed(new Runnable() {
