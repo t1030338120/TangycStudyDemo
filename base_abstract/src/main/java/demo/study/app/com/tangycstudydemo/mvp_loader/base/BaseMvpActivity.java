@@ -10,7 +10,6 @@ import android.support.v7.app.AppCompatActivity;
  * Loader实现Mvp架构的BaseActivity类
  */
 public abstract class BaseMvpActivity<V, T extends BasePresenter<V>> extends AppCompatActivity implements LoaderManager.LoaderCallbacks<T> {
-
     private static final int LOADER_ID = 101;
     protected T mPresenter;
 
