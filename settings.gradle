@@ -1,1 +1,1 @@
-include ':base_abstract', ':lib_core'
+include ':base_abstract'
